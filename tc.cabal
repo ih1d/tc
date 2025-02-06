@@ -2,25 +2,19 @@ cabal-version:      3.0
 name:               tc
 version:            0.0.0.1
 synopsis:           Tensor Calculus
--- description:
 homepage:           https://github.com/ih1d/tc
 license:            NONE
 author:             Isaac Hiram Lopez Diaz
 maintainer:         isaac.lopez@upr.edu
--- copyright:
 category:           Data
 build-type:         Simple
-extra-doc-files:    CHANGELOG.md
--- extra-source-files:
-
-common warnings
-    ghc-options: -Wall
+extra-doc-files:    
+    CHANGELOG.md
+    README.md
 
 library
-    import:           warnings
-    exposed-modules:  MyLib
-    -- other-modules:
-    -- other-extensions:
+    ghc-options:      -Wall
+    exposed-modules:  Tensor
     build-depends:    base ^>=4.17.2.1
                     , primitive
     hs-source-dirs:   src
